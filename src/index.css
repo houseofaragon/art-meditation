@@ -1,0 +1,184 @@
+:root {
+  font-family: Akkurat-Light,Arial,Helvetica,sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgb(29, 25, 32);
+  background-color: rgb(247, 247, 247);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.intro {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(66, 64, 67);
+  max-width: 400px;
+  padding: 50px 0
+}
+
+a {
+  font-weight: 500;
+  color: rgb(192, 132, 252);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid rgb(192, 132, 252);;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: rgb(192, 132, 252);
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+  transition: 1s;
+  z-index: -1;
+}
+
+.quit {
+  position: fixed;
+  top: 5%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+button:hover {
+  color:  rgb(239, 235, 242);
+  background-color: rgb(192, 132, 252);
+  transition: 1s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.image-div img {
+  opacity: 0;
+  animation: fadeInOut 600s ease-in-out forwards; 
+  height: 100vh;
+  cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  display: block; 
+}
+
+.image-div img:active {
+  transform: scale(2); /* Adjust as needed */
+  cursor: zoom-out;
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.info {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeInOutInfo 10s ease-in-out forwards;
+  max-width: 25%;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0.1; }
+  1% { opacity: 0.5}
+  5% { opacity: 1.0; } 
+  7% { opacity: 1.0; }
+  15% { opacity: 1.0; }
+  20% { opacity: 1.0;}
+  50% { opacity: 0.75;}
+  75% { opacity: 0.5; } 
+  100% { opacity: 0; } 
+}
+
+@keyframes fadeInOutInfo {
+  0% { opacity: 0; }
+  5% { opacity: 0.5; } 
+  7% { opacity: 0.75; }
+  15% { opacity: 1.0; }
+  20% { opacity: 1.0;}
+  50% { opacity: 0.75;}
+  75% { opacity: 0.5; } 
+  100% { opacity: 0; } 
+}
