@@ -1,9 +1,8 @@
 # An app for meditating with a piece of artwork
 
-This application asks users to slow down and sit with a single piece of artwork for a duration fo 10 minutes. It shows the user a random piece of artwork and persists the duration spent.
+This application asks users to slow down and sit with a single piece of artwork for a duration of 10 minutes. It shows the user a random piece of artwork and persists the duration spent.
 
 ## Install
-
 ```bash
   npm i
 ```
@@ -12,6 +11,7 @@ This application asks users to slow down and sit with a single piece of artwork 
 ```bash
   npm run dev
 ```
+You should be able to navigate to http://localhost:5173/
 
 ## API
 
@@ -19,5 +19,5 @@ Images are pulled from the [MET Api](https://metmuseum.github.io/). Once the ima
 
 ## Persisting Data
 
-The times for each sitting is stored in a [supabase d](https://supabase.com/), where the info can be viewed in a dashboard or visualization
+The times for each sitting is stored in a [supabase](https://supabase.com/) db, where the info can be viewed in a dashboard or visualization
 
